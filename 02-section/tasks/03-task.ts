@@ -1,6 +1,9 @@
-let tasks;
-let month;
-let results;
+type Tasks=string|string[]
+type Month=string|number
+type Result=number|string|number[]|boolean
+let tasks:Tasks;
+let month:Month;
+let results:Result;
 
 // Определите в явном виде тип переменных таким образом,
 // чтобы код ниже работал корректно

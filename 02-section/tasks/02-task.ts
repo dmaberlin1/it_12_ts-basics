@@ -1,6 +1,15 @@
-const ages = [];
-const answers = [];
-const data = [];
+type Ages=(string|number)[]
+type Answers=(number|string|boolean)[]
+interface FriendsData{
+    name:string
+    age:number
+    city:string
+    hasCar:boolean
+}
+type Data=(number|boolean|string|FriendsData)[]
+const ages:Ages= [];
+const answers:Answers = [];
+const data:Data = [];
 
 // Определите в явном виде типы массивов таким
 // образом, чтобы код ниже работал корректно

@@ -27,6 +27,7 @@
     2. Создайте файл tsconfig.json
    ```
         tsc init
+     так не работает, я юзал  tsc --init
    ```
     3. Раскомментируйте секцию: __/* Type Checking */__
     4. Раскомментируйте __noEmitOnError__

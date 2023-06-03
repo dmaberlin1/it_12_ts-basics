@@ -1,4 +1,5 @@
-let someData = "test";
+type SomeData=number|string|boolean|Date
+let someData:SomeData
 
 // Укажите для переменной someData такой тип,
 // при котором код будет выполняться без ошибок

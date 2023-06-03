@@ -7,3 +7,23 @@
 // 3. Присвойте каждой переменной значение
 // соответствующее лично вам
 // 4. Выведите данные в консоль
+
+type biopassport={
+    name:string
+    surname:string
+    gender:string
+    family_status:string
+    married:boolean
+    pet:boolean
+}
+
+const dma:biopassport={
+    name:'dma',
+    surname:'berlin',
+    gender:'male',
+    family_status:'dating',
+    married:false,
+    pet:false
+}
+
+console.log(dma)
