@@ -1,13 +1,13 @@
 interface IUserData {
     firstName: string;
-    lastName: string;
-    age: number;
+    lastName?: string;
+    age?: number;
     hometown: string;
   }
   
   // Измените тип аргумента data в функции formattedUserData
   // таким образом чтобы ее вызов ниже не вызывал ошибку
-  
+
   function formattedUserData(data: IUserData): string {
     return `
       Имя: ${data.firstName};

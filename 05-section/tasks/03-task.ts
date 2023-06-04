@@ -21,4 +21,7 @@ interface IShop {
     name: IShop["name"];
     address: IShop["address"];
   };
+
+type IShopListItem1=Omit<IShop,"employeesCount" | "ceo" | "isOpen">
+type IShopListItem2=Pick<IShop,'id'|'name'|'address'>
   

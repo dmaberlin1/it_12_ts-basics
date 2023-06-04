@@ -3,24 +3,37 @@
 // полей вы можете менять на свое усмотрение.
 
 enum paymentType {
-    "cash",
-    "card",
-    "credit"
-  }
-  
-  interface ICustomer {
+    "cash" = 'cash',
+    "card" = 'card',
+    "credit" = 'credit'
+}
+
+enum Currency {
+    "EUR" = "EUR",
+    "USD" = "USD",
+    "RUB" = "RUB"
+}
+
+interface IUser1 {
     firstName: string;
     lastName: string;
     dateBirthday: Date;
+}
+
+interface IDeliveryAddress {
     deliveryCountry: string;
     deliveryCity: string;
     deliveryAddress: string;
     deliveryBuilding: number | string;
     deliveryApartment?: number;
-    detiveryTime?: string;
+    deliveryTime?: string;
+}
+
+interface ICustomer1 extends IUser1, IDeliveryAddress {
+
     paymentType: paymentType;
     ordersCount: number;
-    discountPersent: number;
-    currency: "EUR" | "USD" | "RUB";
-  }
+    discountPercent: number;
+    currency:Currency
+}
   

@@ -16,7 +16,8 @@ interface IRoom {
     hasPlants: boolean;
     stoveType: stoveType;
   }
-  
+
+  type KitchenDataType=Omit<IKitchen,keyof IRoom>
   // Выше приведены два интерфейса IRoom - тип комнаты
   // и IKitchen - тип кухни. Не внося изменений в эти
   // интерфейсы создайте тип KitchenDataType в котором
